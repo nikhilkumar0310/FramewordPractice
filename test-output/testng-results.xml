@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-27T20:55:01 IST" name="Default suite" finished-at="2023-06-27T20:55:11 IST" duration-ms="10230">
+    <groups>
+    </groups>
+    <test started-at="2023-06-27T20:55:01 IST" name="Default test" finished-at="2023-06-27T20:55:11 IST" duration-ms="10230">
+      <class name="testCases.CreateContacts">
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:testCases.CreateContacts@57a78e3]" started-at="2023-06-27T20:55:01 IST" name="preConditions" finished-at="2023-06-27T20:55:04 IST" duration-ms="3239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method signature="runCreateContacts()[pri:0, instance:testCases.CreateContacts@57a78e3]" started-at="2023-06-27T20:55:04 IST" name="runCreateContacts" finished-at="2023-06-27T20:55:11 IST" duration-ms="6776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runCreateContacts -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.CreateContacts@57a78e3]" started-at="2023-06-27T20:55:11 IST" name="postCondition" finished-at="2023-06-27T20:55:11 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.CreateContacts -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
