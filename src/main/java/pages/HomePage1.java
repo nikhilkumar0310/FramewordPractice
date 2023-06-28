@@ -1,11 +1,17 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.asserts.SoftAssert;
 
 import baseClass.BaseClass;
 
 public class HomePage1 extends BaseClass {
+	
+	public HomePage1(RemoteWebDriver driver) {
+		this.driver = driver;
+	}
+	
 	
 	public HomePage1 verifyLogin() {
 		String welcomeText = driver.findElement(By.linkText("CRM/SFA")).getText();
@@ -16,7 +22,7 @@ public class HomePage1 extends BaseClass {
 		}
 		public MyHomePage2 clickCRMSFA() {
 		driver.findElement(By.linkText("CRM/SFA")).click();
-		return new MyHomePage2();
+		return new MyHomePage2(driver);
 		}
 		
 

@@ -1,10 +1,16 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
 
 import baseClass.BaseClass;
 
 public class CreateContactsPage extends BaseClass{
+	
+	public CreateContactsPage(RemoteWebDriver driver) {
+		this.driver = driver;
+	}
 	
 	public CreateContactsPage enterFirstName(String fpgName) {
 		driver.findElement(By.id("firstNameField")).sendKeys(fpgName);
@@ -24,7 +30,7 @@ public class CreateContactsPage extends BaseClass{
 	
 	public ViewContactsPage clickCreateContact() {
 		driver.findElement(By.xpath("//input[@value='Create Contact']")).click();
-		return new ViewContactsPage();
+		return new ViewContactsPage(driver);
 	}
 
 }

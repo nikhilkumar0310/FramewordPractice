@@ -10,9 +10,9 @@ public class VerifyLogin extends BaseClass{
 	@Test
 	public void verifyLoginCRMSFAPage() {
 		
-		System.out.println(driver);
+		//System.out.println(driver);
 		
-		new LoginPage().enterUserName().enterPassword().clickOnTheLoginBtn()
+		new LoginPage(driver).enterUserName().enterPassword().clickOnTheLoginBtn()
 		.verifyLogin();
 	}
 }

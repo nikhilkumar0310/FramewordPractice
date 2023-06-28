@@ -13,7 +13,7 @@ import utilities.ReadExcelFile;
 
 public class BaseClass {
 
-	public static RemoteWebDriver driver;
+	public RemoteWebDriver driver; //For Parallel TestNG Execution Step 1. Remove the Static Keyword.
 	public String excelFileName;
 	
 	

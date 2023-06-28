@@ -16,7 +16,7 @@ public class CreateContacts extends BaseClass {
 	@Test(dataProvider = "contacts_Data")
 	public void runCreateContacts(String fName, String lName, String pCode) {
 		
-		new LoginPage().enterUserName().enterPassword().clickOnTheLoginBtn()
+		new LoginPage(driver).enterUserName().enterPassword().clickOnTheLoginBtn()
 		.verifyLogin().clickCRMSFA()
 		.clickOnContactsTab()
 		.clickCreateContacts()
