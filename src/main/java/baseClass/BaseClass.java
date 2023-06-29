@@ -9,11 +9,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import utilities.ReadExcelFile;
 
-public class BaseClass {
+public class BaseClass extends AbstractTestNGCucumberTests {
 
-	public RemoteWebDriver driver; //For Parallel TestNG Execution Step 1. Remove the Static Keyword.
+	public static RemoteWebDriver driver; //For Parallel TestNG Execution Step 1. Remove the Static Keyword.
 	public String excelFileName;
 	
 	

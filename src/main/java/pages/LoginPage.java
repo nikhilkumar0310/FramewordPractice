@@ -1,29 +1,28 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
 import baseClass.BaseClass;
+import io.cucumber.java.en.Given;
 
 public class LoginPage extends BaseClass{
 
-	public LoginPage(RemoteWebDriver driver) {
-		this.driver = driver;
-	}
 	
-	public LoginPage enterUserName() {
-		driver.findElement(By.id("username")).sendKeys("Demosalesmanager");
+	@Given("I enter username as {string}")
+	public LoginPage enterUserName(String username) {
+		driver.findElement(By.id("username")).sendKeys(username);
 		return this;
 	}
 	
-	public LoginPage enterPassword() {
-        driver.findElement(By.id("password")) .sendKeys("crmsfa");
+	@Given("I enter password as {string}")
+	public LoginPage enterPassword(String password) {
+        driver.findElement(By.id("password")).sendKeys(password);
         return this;
 	}
 	
+	@Given("I click on the login button")
 	public HomePage1 clickOnTheLoginBtn() {
 		driver.findElement(By.xpath("//input[@class='decorativeSubmit']")).click();
-		return new HomePage1(driver);
+		return new HomePage1();
 		
 	}
 }

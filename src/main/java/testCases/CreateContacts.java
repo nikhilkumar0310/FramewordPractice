@@ -13,14 +13,14 @@ public class CreateContacts extends BaseClass {
 		excelFileName = "dataForContactsTab";
 	}
 
-	@Test(dataProvider = "contacts_Data")
-	public void runCreateContacts(String fName, String lName, String pCode) {
+	@Test//(dataProvider = "contacts_Data")
+	public void runCreateContacts() {
 		
-		new LoginPage(driver).enterUserName().enterPassword().clickOnTheLoginBtn()
+		new LoginPage().enterUserName("Trial Username").enterPassword("Trail Password").clickOnTheLoginBtn()
 		.verifyLogin().clickCRMSFA()
 		.clickOnContactsTab()
 		.clickCreateContacts()
-		.enterFirstName(fName).enterLastName(lName).enterPINCode(pCode).clickCreateContact()
-		.verifyFirstName(fName);
+		.enterFirstName("Dummy").enterLastName("Dummy").enterPINCode("Dummy").clickCreateContact()
+		.verifyFirstName("Dummy");
 	}
 }

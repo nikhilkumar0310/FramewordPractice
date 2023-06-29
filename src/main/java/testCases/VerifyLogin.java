@@ -12,7 +12,7 @@ public class VerifyLogin extends BaseClass{
 		
 		//System.out.println(driver);
 		
-		new LoginPage(driver).enterUserName().enterPassword().clickOnTheLoginBtn()
+		new LoginPage().enterUserName("D Data, Actual Data picked from Examples").enterPassword("D Data, Actual Data picked from Examples").clickOnTheLoginBtn()
 		.verifyLogin();
 	}
 }
