@@ -1,20 +1,16 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 
 import baseClass.BaseClass;
+import io.cucumber.java.en.Then;
 
 public class ViewContactsPage extends BaseClass{
-	
-	
-	public ViewContactsPage(RemoteWebDriver driver) {
-		this.driver = driver;
-	}
-	
+
+	@Then("I verfy the first name of the Contact Created as {string}")
 	public ViewContactsPage verifyFirstName(String fNamePage) {
-		String firstNamePresent = driver.findElement(By.id("viewContact_firstName_sp")).getText();
+		String firstNamePresent = getDriver().findElement(By.id("viewContact_firstName_sp")).getText();
 		Assert.assertEquals(firstNamePresent, fNamePage);
 		return this;
 	}

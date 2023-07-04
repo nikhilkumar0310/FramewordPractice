@@ -1,20 +1,16 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.remote.RemoteWebDriver;
-
 import baseClass.BaseClass;
+import io.cucumber.java.en.Given;
+
 
 public class MyHomePage2 extends BaseClass{
-	
-	
-	public MyHomePage2(RemoteWebDriver driver) {
-		this.driver = driver;
-	}
-	
+
+	@Given("I click on the Contacts Tab in MyHomePage")
 	public ContactsPage clickOnContactsTab() {
-		driver.findElement(By.linkText("Contacts")).click();
-		return new ContactsPage(driver);
+		getDriver().findElement(By.linkText("Contacts")).click();
+		return new ContactsPage();
 	}
 
 }
