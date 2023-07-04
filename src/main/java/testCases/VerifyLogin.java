@@ -8,11 +8,11 @@ import pages.LoginPage;
 public class VerifyLogin extends BaseClass{
 
 	@Test
-	public void verifyLoginCRMSFAPage() {
+	public void verifyLoginCRMSFAPage() throws InterruptedException {
 		
 		//System.out.println(driver);
 		
-		new LoginPage(driver).enterUserName().enterPassword().clickOnTheLoginBtn()
+		new LoginPage().enterUserName("Democsr2").enterPassword("crmsfa").clickOnTheLoginBtn()
 		.verifyLogin();
 	}
 }

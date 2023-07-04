@@ -9,13 +9,22 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import utilities.ReadExcelFile;
 
-public class BaseClass {
+public class BaseClass extends AbstractTestNGCucumberTests {
 
-	public RemoteWebDriver driver; //For Parallel TestNG Execution Step 1. Remove the Static Keyword.
+	//public static RemoteWebDriver driver; //Will Use ThreadLocal for Cucumber Parallel Execution. 
+	private static final ThreadLocal<RemoteWebDriver> thDriver = new ThreadLocal<RemoteWebDriver>();
 	public String excelFileName;
 	
+	public void setDriver(RemoteWebDriver driver) {
+		thDriver.set(driver);
+	}
+	
+	public RemoteWebDriver getDriver() {
+		return thDriver.get();
+	}
 	
 	
 	
@@ -27,16 +36,17 @@ public class BaseClass {
 	
 	@BeforeMethod
 	public void preConditions() {
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("http://leaftaps.com/opentaps/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+		//driver = new ChromeDriver();
+		setDriver(new ChromeDriver());
+		getDriver().manage().window().maximize();
+		getDriver().get("http://leaftaps.com/opentaps/");
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
 	}
 	
 	@AfterMethod
 	public void postCondition() {
-		driver.close();
+		getDriver().close();
 		
 	}
 }

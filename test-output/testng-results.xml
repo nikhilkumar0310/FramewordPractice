@@ -1,89 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-29T00:32:20 IST" name="Suite" finished-at="2023-06-29T00:32:39 IST" duration-ms="19196">
+  <suite started-at="2023-07-03T20:11:34 IST" name="Default suite" finished-at="2023-07-03T20:11:56 IST" duration-ms="22083">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerForCucumber.Runner@3cce5371]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-06-29T00:32:20 IST" name="Test" finished-at="2023-06-29T00:32:39 IST" duration-ms="19196">
-      <class name="testCases.VerifyLogin">
-        <test-method is-config="true" signature="preConditions()[pri:0, instance:testCases.VerifyLogin@7d9d0818]" started-at="2023-06-29T00:32:20 IST" name="preConditions" finished-at="2023-06-29T00:32:24 IST" duration-ms="3827" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preConditions -->
-        <test-method signature="verifyLoginCRMSFAPage()[pri:0, instance:testCases.VerifyLogin@7d9d0818]" started-at="2023-06-29T00:32:24 IST" name="verifyLoginCRMSFAPage" finished-at="2023-06-29T00:32:24 IST" duration-ms="643" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginCRMSFAPage -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.VerifyLogin@7d9d0818]" started-at="2023-06-29T00:32:24 IST" name="postCondition" finished-at="2023-06-29T00:32:25 IST" duration-ms="137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-      </class> <!-- testCases.VerifyLogin -->
-      <class name="testCases.CreateContacts">
-        <test-method is-config="true" signature="fileNamePass()[pri:0, instance:testCases.CreateContacts@6b695b06]" started-at="2023-06-29T00:32:20 IST" name="fileNamePass" finished-at="2023-06-29T00:32:20 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fileNamePass -->
-        <test-method is-config="true" signature="preConditions()[pri:0, instance:testCases.CreateContacts@6b695b06]" started-at="2023-06-29T00:32:21 IST" name="preConditions" finished-at="2023-06-29T00:32:24 IST" duration-ms="2802" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- preConditions -->
-        <test-method signature="runCreateContacts(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.CreateContacts@6b695b06]" started-at="2023-06-29T00:32:24 IST" name="runCreateContacts" data-provider="contacts_Data" finished-at="2023-06-29T00:32:30 IST" duration-ms="6658" status="PASS">
+    <test started-at="2023-07-03T20:11:34 IST" name="Default test" finished-at="2023-07-03T20:11:56 IST" duration-ms="22083">
+      <class name="runnerForCucumber.Runner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:34 IST" name="setUpClass" finished-at="2023-07-03T20:11:35 IST" duration-ms="218" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Kai]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Haverts]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[66600]]>
+                <![CDATA[org.testng.TestRunner@78fbff54]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runCreateContacts -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.CreateContacts@6b695b06]" started-at="2023-06-29T00:32:30 IST" name="postCondition" finished-at="2023-06-29T00:32:31 IST" duration-ms="141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method is-config="true" signature="preConditions()[pri:0, instance:testCases.CreateContacts@6b695b06]" started-at="2023-06-29T00:32:31 IST" name="preConditions" finished-at="2023-06-29T00:32:32 IST" duration-ms="1830" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:35 IST" name="preConditions" finished-at="2023-07-03T20:11:40 IST" duration-ms="5639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preConditions -->
-        <test-method signature="runCreateContacts(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.CreateContacts@6b695b06]" started-at="2023-06-29T00:32:32 IST" name="runCreateContacts" data-provider="contacts_Data" finished-at="2023-06-29T00:32:39 IST" duration-ms="6613" status="PASS">
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:35 IST" name="preConditions" finished-at="2023-07-03T20:11:40 IST" duration-ms="5680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:35 IST" name="preConditions" finished-at="2023-07-03T20:11:40 IST" duration-ms="5758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method is-config="true" signature="preConditions()[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:35 IST" name="preConditions" finished-at="2023-07-03T20:11:40 IST" duration-ms="5662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preConditions -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-03T20:11:47 IST" duration-ms="7018" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Raheem]]>
+                <![CDATA["Create Contacts - Positive Scenario"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Sterling]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[77011]]>
+                <![CDATA["Verify Successfull creation of atleast two records."]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runCreateContacts -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.CreateContacts@6b695b06]" started-at="2023-06-29T00:32:39 IST" name="postCondition" finished-at="2023-06-29T00:32:39 IST" duration-ms="117" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-03T20:11:56 IST" duration-ms="15994" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create Contacts - Positive Scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify Successfull creation of atleast two records."]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"CRM/SFA"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee39a9eca6d3dadf483143dc17e3641d, findElement {using=link text, value=CRM/SFA}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Nikhil\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62358}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62358/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee39a9eca6d3dadf483143dc17e3641d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"CRM/SFA"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.2', revision: '826dbfc730'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee39a9eca6d3dadf483143dc17e3641d, findElement {using=link text, value=CRM/SFA}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Nikhil\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62358}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62358/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee39a9eca6d3dadf483143dc17e3641d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at pages.HomePage1.verifyLogin(HomePage1.java:14)
+at ✽.I verify the HomePage(file:///D:/TestLeaf/CucuPOMTestNGseq/./src/main/java/features/CreateContacts.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-03T20:11:41 IST" duration-ms="995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Login Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify successfull login scenario for the leafTaps Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-07-03T20:11:41 IST" duration-ms="890" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Login Functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify successfull login scenario for the leafTaps Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:41 IST" name="postCondition" finished-at="2023-07-03T20:11:41 IST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-      </class> <!-- testCases.CreateContacts -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:41 IST" name="postCondition" finished-at="2023-07-03T20:11:41 IST" duration-ms="274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:47 IST" name="postCondition" finished-at="2023-07-03T20:11:47 IST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:56 IST" name="postCondition" finished-at="2023-07-03T20:11:56 IST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerForCucumber.Runner@3cce5371]" started-at="2023-07-03T20:11:56 IST" name="tearDownClass" finished-at="2023-07-03T20:11:56 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runnerForCucumber.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
